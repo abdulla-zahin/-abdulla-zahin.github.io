@@ -246,7 +246,7 @@
     const invitationText = `You're invited to the Nikah of Abdulla Zahin & Sundhus Fathima on 24 December 2026, followed by the Reception on 25 December 2026. View the invitation: ${location.href}`;
     const confirmationText = `Assalamu Alaikum! I am delighted to confirm my presence for the wedding celebrations of Abdulla Zahin & Sundhus Fathima. ${location.href}`;
     document.querySelectorAll('[data-rsvp]').forEach((button) => {
-      button.addEventListener('click', () => window.open(`https://wa.me/?text=${encodeURIComponent(confirmationText)}`, '_blank', 'noopener'));
+      button.addEventListener('click', () => window.open(`https://wa.me/919995600555?text=${encodeURIComponent(confirmationText)}`, '_blank', 'noopener'));
     });
     document.getElementById('shareInvitation').addEventListener('click', async () => {
       if (navigator.share) {
