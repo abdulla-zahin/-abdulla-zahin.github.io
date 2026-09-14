@@ -8,7 +8,7 @@
   <title>Abdulla Zahin &amp; Sundhus Fathima · Wedding Reception</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&amp;family=DM+Sans:wght@400;500;600&amp;family=Italiana&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&amp;family=DM+Sans:wght@400;500;600&amp;family=Great+Vibes&amp;family=Italiana&amp;display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23eef6f5'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%23b88d4c'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='25' fill='%230b5554'%3EA%3C/text%3E%3C/svg%3E">
   <style>
     :root {
@@ -23,6 +23,7 @@
       --display: "Italiana", Georgia, serif;
       --sans: "DM Sans", system-ui, sans-serif;
       --arabic: "Aref Ruqaa", serif;
+      --script: "Great Vibes", cursive;
       --ease: cubic-bezier(.2,.8,.2,1);
     }
     * { box-sizing: border-box; }
@@ -144,6 +145,85 @@
       .countdown div { padding-inline: 3px; }
     }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition-duration: .01ms !important; } }
+
+    /* Chocolate, ivory and botanical fusion */
+    :root { --mist: #ece5da; --pearl: #fbf6ed; --ocean: #4b382d; --deep: #211713; --sea: #8f7a69; --gold: #c7a767; --ink: #3b2c24; --muted: #77695e; }
+    body { background: #ece5da; }
+    .grain { opacity: .07; }
+    .opening { background: radial-gradient(circle at 15% 12%, rgba(199,167,103,.12), transparent 25%), radial-gradient(circle at 90% 86%, rgba(255,255,255,.055), transparent 28%), #241a16; }
+    .opening::before { border-color: rgba(199,167,103,.2); }
+    .invitation-slip { color: #f5e7c8; background: rgba(55,40,33,.86); border-color: rgba(199,167,103,.38); box-shadow: 0 35px 100px rgba(0,0,0,.4), inset 0 0 55px rgba(199,167,103,.025); }
+    .slip-kicker { color: #d6c39b; }
+    .slip-arabic { color: #efd99f; }
+    .slip-monogram { color: #f4e3bd; border-color: var(--gold); box-shadow: 0 0 0 8px rgba(199,167,103,.07); }
+    .slip-names { color: #f4dfb3; font-family: var(--script); font-size: 1.75rem; line-height: 1.3; }
+    .open-button, .primary-action { color: #251a15; background: linear-gradient(120deg, #e2c985, #b8914c); box-shadow: 0 14px 35px rgba(0,0,0,.25); }
+    .open-button:hover, .primary-action:hover { color: #211713; background: #efd99f; }
+
+    .hero { background: radial-gradient(circle at 70% 15%, rgba(199,167,103,.09), transparent 25%), linear-gradient(135deg, #fffdf8, #eee6da); }
+    .hero::before { border-color: rgba(75,56,45,.12); box-shadow: 0 0 0 50px rgba(75,56,45,.025), 0 0 0 100px rgba(75,56,45,.018); }
+    .date-rail { border-color: rgba(75,56,45,.22); color: #5c4537; background: rgba(255,255,255,.28); }
+    .bismillah { color: #2d211b; }
+    .hero-kicker, .eyebrow { color: #a27d39; }
+    h1 { position: relative; z-index: 2; color: #34241d; font-family: var(--script); font-size: clamp(4.2rem, 13vw, 9.2rem); line-height: .8; letter-spacing: -.02em; }
+    h1 .amp { color: var(--gold); font-family: var(--display); font-size: .27em; }
+    .hero-content { z-index: 2; }
+    .hero-note { position: relative; z-index: 2; }
+    .scroll-cue { color: #4b382d; }
+    .botanical { position: absolute; z-index: 1; width: clamp(170px, 27vw, 360px); height: auto; color: #1f1916; opacity: .9; pointer-events: none; }
+    .botanical-left { left: clamp(35px, 5vw, 72px); top: -18px; }
+    .botanical-right { right: -28px; bottom: -36px; transform: rotate(180deg); }
+    .botanical .stem { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
+    .botanical .leaf { fill: currentColor; }
+    .botanical .petal { fill: #faf5e9; stroke: currentColor; stroke-width: 1.25; }
+    .lanterns { position: absolute; z-index: 1; right: clamp(16px, 5vw, 70px); top: 0; width: clamp(90px, 15vw, 185px); color: #aa8744; opacity: .85; pointer-events: none; }
+    .lanterns path, .lanterns polygon, .lanterns circle { fill: none; stroke: currentColor; stroke-width: 1.4; }
+
+    .family { color: #f4ead7; background: radial-gradient(circle at 85% 20%, rgba(199,167,103,.08), transparent 28%), #2a1e19; }
+    .family::before, .family::after { border-color: rgba(199,167,103,.2); }
+    .family-copy { color: #f4ead7; }
+    .family-copy strong { color: #ddc182; }
+    .bride-note { color: #cbbdae; }
+
+    .events { color: var(--deep); background: #f2ebe1; }
+    .events-head .eyebrow { color: #9a7435; }
+    .events-head h2 { color: var(--deep); }
+    .events-head p { color: var(--muted); }
+    .event-card { color: #f5ead5; background: #2b201b; border: 1px solid rgba(199,167,103,.55); border-radius: 3px; box-shadow: 0 24px 55px rgba(43,32,27,.16); }
+    .event-card h3, .event-card .event-time { color: #fff8ea; }
+    .event-card .event-date, .event-card .event-label { color: #d8b96f; }
+    .event-card .event-place { color: #c9bbad; }
+    .event-card .event-button { color: #ead39e; border-color: rgba(199,167,103,.45); }
+    .event-card .event-button:hover { color: #241a16; background: #dfc27f; }
+    .event-card:nth-child(2) { color: var(--ink); background: #fffaf1; }
+    .event-card:nth-child(2) h3, .event-card:nth-child(2) .event-time { color: var(--deep); }
+    .event-card:nth-child(2) .event-date, .event-card:nth-child(2) .event-label { color: #9c7637; }
+    .event-card:nth-child(2) .event-place { color: var(--muted); }
+    .event-card:nth-child(2) .event-button { color: #4b382d; border-color: rgba(75,56,45,.28); }
+
+    .countdown-section { background: #d8cec0; }
+    .countdown strong { color: #4b382d; }
+    .rsvp { background: radial-gradient(circle at 50% 45%, #3b2b23, #211713); }
+    .rsvp::before { border-color: rgba(199,167,103,.25); box-shadow: 0 0 0 55px rgba(199,167,103,.025); }
+    .rsvp h2 { color: #f8ead0; }
+    .rsvp p { color: #c9bbad; }
+    .rsvp .eyebrow { color: #d9b96e; }
+    .with-love { color: #e3c77f !important; }
+    .with-love span { color: #f1e3cb; }
+    footer { background: #160f0c; }
+    .dock-button { color: #4b382d; }
+    .dock-button:last-child { color: #251a15; background: #d8b66d; }
+    .celebration { background: rgba(29,20,16,.55); }
+    .celebration-message { background: rgba(44,31,25,.96); color: #f7ead0; }
+    .celebration-arabic { color: #efd99f; }
+    .celebration-message small { color: #cbbdae; }
+    @media (max-width: 720px) {
+      .botanical { width: 180px; opacity: .82; }
+      .botanical-left { left: 36px; top: -10px; }
+      .botanical-right { right: -70px; bottom: -15px; }
+      .lanterns { right: -5px; width: 105px; opacity: .62; }
+      h1 { font-size: clamp(4rem, 19vw, 6.4rem); }
+    }
   </style>
 </head>
 <body>
@@ -161,6 +241,26 @@
 
   <main class="page">
     <section class="hero" id="top">
+      <svg class="botanical botanical-left" viewBox="0 0 320 360" aria-hidden="true">
+        <path class="stem" d="M18 5c54 50 70 112 76 188M42 50c42 26 78 68 102 128M91 17c-3 57 20 105 69 146M25 126c58 13 105 54 133 113"/>
+        <ellipse class="leaf" cx="48" cy="52" rx="14" ry="31" transform="rotate(-43 48 52)"/><ellipse class="leaf" cx="87" cy="91" rx="13" ry="29" transform="rotate(42 87 91)"/>
+        <ellipse class="leaf" cx="113" cy="48" rx="15" ry="33" transform="rotate(-15 113 48)"/><ellipse class="leaf" cx="128" cy="128" rx="13" ry="30" transform="rotate(48 128 128)"/>
+        <ellipse class="leaf" cx="67" cy="151" rx="15" ry="34" transform="rotate(-61 67 151)"/><ellipse class="leaf" cx="137" cy="198" rx="14" ry="32" transform="rotate(61 137 198)"/>
+        <g transform="translate(152 79)"><ellipse class="petal" cx="0" cy="-25" rx="12" ry="27"/><ellipse class="petal" cx="24" cy="-7" rx="12" ry="27" transform="rotate(72 24 -7)"/><ellipse class="petal" cx="15" cy="21" rx="12" ry="27" transform="rotate(144 15 21)"/><ellipse class="petal" cx="-15" cy="21" rx="12" ry="27" transform="rotate(216 -15 21)"/><ellipse class="petal" cx="-24" cy="-7" rx="12" ry="27" transform="rotate(288 -24 -7)"/><circle cx="0" cy="0" r="8" fill="#c7a767"/></g>
+        <g transform="translate(77 228) scale(.72)"><ellipse class="petal" cx="0" cy="-25" rx="12" ry="27"/><ellipse class="petal" cx="24" cy="-7" rx="12" ry="27" transform="rotate(72 24 -7)"/><ellipse class="petal" cx="15" cy="21" rx="12" ry="27" transform="rotate(144 15 21)"/><ellipse class="petal" cx="-15" cy="21" rx="12" ry="27" transform="rotate(216 -15 21)"/><ellipse class="petal" cx="-24" cy="-7" rx="12" ry="27" transform="rotate(288 -24 -7)"/><circle cx="0" cy="0" r="8" fill="#c7a767"/></g>
+      </svg>
+      <svg class="botanical botanical-right" viewBox="0 0 320 360" aria-hidden="true">
+        <path class="stem" d="M18 5c54 50 70 112 76 188M42 50c42 26 78 68 102 128M91 17c-3 57 20 105 69 146M25 126c58 13 105 54 133 113"/>
+        <ellipse class="leaf" cx="48" cy="52" rx="14" ry="31" transform="rotate(-43 48 52)"/><ellipse class="leaf" cx="87" cy="91" rx="13" ry="29" transform="rotate(42 87 91)"/>
+        <ellipse class="leaf" cx="113" cy="48" rx="15" ry="33" transform="rotate(-15 113 48)"/><ellipse class="leaf" cx="128" cy="128" rx="13" ry="30" transform="rotate(48 128 128)"/>
+        <ellipse class="leaf" cx="67" cy="151" rx="15" ry="34" transform="rotate(-61 67 151)"/><ellipse class="leaf" cx="137" cy="198" rx="14" ry="32" transform="rotate(61 137 198)"/>
+        <g transform="translate(152 79)"><ellipse class="petal" cx="0" cy="-25" rx="12" ry="27"/><ellipse class="petal" cx="24" cy="-7" rx="12" ry="27" transform="rotate(72 24 -7)"/><ellipse class="petal" cx="15" cy="21" rx="12" ry="27" transform="rotate(144 15 21)"/><ellipse class="petal" cx="-15" cy="21" rx="12" ry="27" transform="rotate(216 -15 21)"/><ellipse class="petal" cx="-24" cy="-7" rx="12" ry="27" transform="rotate(288 -24 -7)"/><circle cx="0" cy="0" r="8" fill="#c7a767"/></g>
+      </svg>
+      <svg class="lanterns" viewBox="0 0 190 300" aria-hidden="true">
+        <path d="M48 0v78M137 0v127M40 78h16l8 16-16 12-16-12 8-16Zm0 28v58M125 127h24l12 21-24 18-24-18 12-21Zm12 39v74"/>
+        <polygon points="48,84 58,94 48,101 38,94"/><polygon points="137,136 152,149 137,160 122,149"/>
+        <circle cx="48" cy="171" r="3"/><circle cx="137" cy="248" r="3"/>
+      </svg>
       <div class="date-rail">25 · 12 · 2026 — Kollam, Kerala</div>
       <div class="hero-content">
         <p class="bismillah reveal" lang="ar" dir="rtl">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
